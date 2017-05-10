@@ -1,0 +1,28 @@
+﻿/* SP Hack: Make sure the edit tool bar dropdown is always visible */
+/*
+body.v4master { margin-top: 44px; }
+#s4-ribbonrow { z-index: 1000; position: fixed; top: 0; }
+*/
+/* fixes for dialog boxes */
+.ms-dialog #s4-ribbonrow { position: static; } 
+.ms-dialog body.v4master { margin-top: 0; }
+
+
+/*#s4-workspace object { position: fixed; }*/
+
+/* space out the menu bar vertically to work with tabs */
+/*
+.menuBarSpacer { height: 91px; }
+#s4-titlerow { 	 margin-top: -91px; }
+*/
+
+/* parallax skrollr stuff */
+/*BODY #s4-workspace { position: fixed; z-index: 101; width: 100%; } /* 1 above content */
+/*BODY #s4-workspace { height: 1200px; height: 100%; } /* force scrolling for testing */
+ 
+/* pad the top of the menu bar until JS loads the .menuBarSpacer to prevent the UX bounce */
+/*
+ BODY #s4-workspace     	{ padding-top: 91px; }
+.ms-dialog BODY #s4-workspace, 
+ BODY #s4-workspace.skrollr { padding-top: 0px; }
+*/

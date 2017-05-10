@@ -1,0 +1,287 @@
+﻿/* 
+
+  Colors
+
+	red dull   = #782526
+  red bright = #BB101D
+  blue       = rgb(27, 121, 226)
+
+ */
+
+/* disable alert */
+/*#notificationArea {display: none;}*/
+
+/* base styles */
+
+.ms-pagebreadcrumb
+{
+	
+	display:none;
+}
+
+
+.ms-webpartzone-cell{
+	
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+
+    margin-right:10px;
+
+	border-top-color: rgb(204,204,204);
+	border-left-color: rgb(204,204,204);
+	border-right-color: rgb(204,204,204);
+	border-bottom-color: rgb(204,204,204);
+
+	border-style:solid;
+}
+
+body {
+	font-size: .85em;
+}
+
+body .ms-core-brandingText {
+	font-size:0;
+}
+body .ms-core-brandingText:after {
+	font-size: 17px;
+	display:block;
+	height:15px;
+	padding: 15px 0 0 7px;
+	content: "SOCEUR";
+	/*background: rgba(27,121,226,.8);*/
+	background: #bb101d;
+	letter-spacing:1px;
+	width: 74px;
+}
+
+body .ms-accentText, 
+body .ms-accentText:visited,
+body .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, 
+body .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, 
+body .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, 
+body .ms-tv-selected:link {
+	/*color: rgb(27, 121, 226);*/
+	color: #666666;
+}
+
+body .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, 
+body .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, 
+body a.ms-tv-item:hover, 
+body a.ms-tv-header:hover {
+	color: #666666;
+	border-bottom: 1px dashed #999;
+}
+
+body li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, 
+body li > a.ms-core-listMenu-item:hover, 
+body li > a.ms-core-listMenu-item:active {
+  /*background-color: rgb(27, 121, 226);*/
+   background-color: #666666;
+  
+  color: #fff;
+}
+
+body .ms-core-listMenu-selected:link, 
+body .ms-core-listMenu-selected:visited, 
+body .ms-core-listMenu-selected {
+  background-color: #fff;
+  /*color: rgb(27, 121, 226);*/
+  color: #666666;
+  font-weight: 800;
+}
+
+/* headers */
+/*
+body .ms-core-pageTitle { 
+	font-weight: 500; 
+	float:left;
+}
+*/
+
+body .ms-breadcrumb-top {
+	position: relative;
+	top: 45px;
+}
+
+body #suiteBarLeft {
+  background-color: #000;
+  background-image: url('images/background-carbon-fiber.jpg');
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+#DeltaSiteLogo a {
+  background-image: url('images/logo-with-stroke-small.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 60px;
+  height: 74px;
+  max-height: 74px;
+}
+#DeltaSiteLogo a img { display: none; }
+
+body .ms-srch-sb-border:hover {
+  border: 1px solid rgb(27, 121, 226);
+  color: rgb(27, 121, 226);
+}
+body .ms-srch-sb-border:hover input.ms-helperText {
+  color: rgb(27, 121, 226);
+}
+body .ms-srch-sb.ms-srch-sb-borderFocused,
+body .ms-srch-sb-border  {
+  background: #FFF;
+}
+
+body #s4-titlerow {
+	background-image: url('images/circle-green-glow-crop.png');
+  background-repeat: no-repeat;
+  background-position: 102% 91%;
+}
+
+/* menus */
+
+	/* move SOCEUR to act as a header */
+	
+	
+	
+	body #titleAreaRow .ms-core-listMenu-root > li.static > a.ms-core-listMenu-item:first-child {
+	    font-weight: 200;
+	    width: 0;
+		position:relative;
+		z-index: 10;
+		top: -40px;
+		font-size: 2em;
+		color: #BB101D;
+	}
+	body #titleAreaRow .ms-core-listMenu-root > li.static > a.ms-core-listMenu-item:hover {
+	    text-decoration: none;
+		color: #000;
+		border-bottom:none;
+	}
+	body #titleAreaRow .ms-core-listMenu-root ul.static {
+		position:relative;
+		left: -2.25em;
+		top: -1.1em;
+		height: 25px;
+	}
+	
+	body #titleAreaRow h1#pageTitle {
+		position:relative;
+		top: -34px;
+		/*left: 110px;*/
+		font-size: 27px;
+	}
+	
+	
+
+
+	
+
+.sample-menu {
+	position: absolute;
+	z-index: 1000;
+	margin-left: -5px;
+}
+
+.sample-menu .menu-item a {
+	color: #fff;
+}
+
+.ms-core-listMenu-root li.static ul.dynamic {
+	box-shadow: none;
+	padding:0;
+	border: none;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-root .additional-background.dynamic-children {
+	padding-right: 15px;
+}
+
+.ms-core-listMenu-root li.static ul.dynamic li > a {
+  max-width: 175px;
+  width: 175px;
+  display: block;
+  background: #666;
+  padding: .5em .5em;
+  font-weight: 200;
+  border-bottom: 1px solid #777;
+  color: #fff;
+}
+
+.ms-core-listMenu-root li.static ul.dynamic li > a:hover {
+  color: #fff;
+  background-color: rgb(27, 121, 226);
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+}
+
+/*
+FLYOUT MENU -- not yet implemented
+.sample-menu .menu-item .menu-flyout {
+	position: absolute;
+	width: 400px;
+	max-width: 400px;
+	background-color: rgb(27, 121, 226);
+	left: 165px;
+	top: 2em;
+	padding: .9em .8em;
+}
+
+.sample-menu .menu-item .menu-flyout a.menu-child {
+  display: block;
+  width: 175px;
+  padding: .4em 15px .6em .5em;
+  float: left;
+}
+*/
+
+/* menu fixing */
+
+#DeltaTopNavigation.snap-to-top {
+	position: fixed;
+	left: 0;
+	top: 64px;
+	border-bottom: 1px solid #999;
+	height: 20px;
+	background: #fff;
+	padding: .5em 1em;
+	width: 100%;
+}
+body #DeltaTopNavigation.snap-to-top .ms-core-listMenu-root > li.static > a.ms-core-listMenu-item:first-child {
+	z-index: -1;
+}
+
+/* clocks */
+#clock {
+  width: 510px;
+  margin-right: 1.5em;
+}
+
+#clock .timezone {
+  display: inline-block;
+  margin: -0.5em 0 0 1em;
+  color: rgb(27, 121, 226);
+  float:right;
+}
+
+
+#clock .timezone .zonename {
+  font-size: .9em;
+}
+
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenuEdit, .ms-core-listMenu-heading, .ms-tv-header{
+   color:#bb101d;
+   font-weight:400;
+}
+
+#soceur-menu, .menu-mega-tabs{
+	background:black;
+}
+

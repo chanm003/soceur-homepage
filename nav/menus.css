@@ -1,0 +1,300 @@
+﻿
+/*7355*/
+.menu ul {
+	list-style: outside none none;
+}
+
+/*7359*/
+.menu ul, .menu li {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*7394*/
+.menu-horizontal ul {
+	display: inline;
+}
+
+/*7404*/
+/*redesign_2014.css*/
+.menu-horizontal {
+	font-family: 'Calibri', OpenSansRegular;
+	font-weight:200;
+  	font-size: .95em;
+  	color: #666;
+  	display: table;
+}
+
+.active { display: inline-block !important; opacity: 1; }
+
+
+
+
+.menu-horizontal a,
+.menu-horizontal a:visited,
+.menu-horizontal a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/*
+  CSS to make the menus work.
+*/
+
+/* BEGIN Hack attack to keep SP on point*/
+/* Keep the search ontop of the navigation menus */
+a.menu-mega {
+  display: inline-block; 
+  padding: .6em .5em .8em;
+  height: 1.6em;
+  border: none;
+  color: #AA2526;
+}
+
+a.menu-mega:hover { background: #AA2526; border-bottom: none; color: #fff; }
+
+a.menu-mega.active { background: #AA2526; border-bottom: none; color: #fff; }
+
+a.menu-mega.active {
+  margin-top: -2px; 
+  background: #fff;
+}
+#soceur-menu {
+  background: #1D1D1D;
+}
+
+.menu-horizontal a.menu-mega {
+border-top: 3px solid transparent;
+  color: white;
+  padding-bottom: 0;
+  box-sizing: content-box;
+  /*background: #999;*/
+  margin-right:1px;
+}
+
+.menu-horizontal .menu-mega.active { 
+  border-top: 3px solid green; 
+  border-bottom: none;
+  background: #EEE;
+  color:black;
+  position: relative;
+  top: -1px;
+}
+
+.menu-horizontal a.menu-mega:hover { 
+  border-top: 3px solid green; 
+  border-bottom: none;
+  background: #EEE;
+  color:black;
+  position: relative;
+  top: -1px;
+}
+
+.menu-horizontal a.menu-mega:first-child {
+  margin-left: .5em;
+}
+
+
+.menu-mega-tabs {
+  background: #1D1D1D;
+  display: block;
+  height: 2.3em;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.menu-mega-contents {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background: rgb(203, 37, 38);
+  border-bottom: 3px solid rgb(203, 37, 38);
+}
+
+.menu-group h3 {
+	display: block;
+	font-family: "Calibri", OpenSansRegular;
+   /*white-space:pre-wrap;*/
+}
+
+.menu-group:hover {
+	background: #A61E1E;
+	/*background: #444;*/
+}
+.menu-group.active {
+	display: block !important;
+	/*
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A61E1E', endColorstr='#333333',GradientType=1);
+	background-image: linear-gradient(to right, #A61E1E, #333333);
+	*/
+	background: #444;
+	/*border-bottom: 1px solid #AA2526;*/
+	
+}
+
+.more-indicator {
+	position: relative;
+	left: -18px;
+	top: -1px;
+	margin-right: -13px; /* prevent it from spacing out the menu */
+}
+
+.menu-group-flyout-wrapper {
+	display: none;
+	position: fixed;
+	width: 500px;
+	margin-left: 195px;
+	top: 0;
+	z-index: 1000;
+	overflow:hidden;
+	border-bottom: 1px solid #111;
+	background-color: #333;
+
+	
+}
+.menu-group .menu-group-flyout {
+	width: 500px;
+}
+.menu-group .menu-group-flyout .column {
+	width: 238px;
+	display:inline-block;
+	float: left;
+}
+
+.menu-group.active .menu-group-flyout-wrapper {
+	display: block;
+}
+
+.menu-group-flyout .belowLevel2Head {
+	display: inline-block;
+    width: 43%;
+	margin: 0 0 0 20px;
+	vertical-align: top;
+	font-size: 1.3em;
+}
+
+.menu-horizontal .menu-mega-contents .menu-group .menu-flyout-title a:hover {
+	font-weight: 300;
+	color: #FFF;
+	font-size: 2.6em;
+	margin: 20px 0px 1px 11px;
+	width: 500px;
+}
+
+.menu-horizontal .menu-mega-contents .menu-group .menu-flyout-title a {
+	font-weight: 300;
+	color: #FFF;
+	font-size: 2.6em;
+	margin: 20px 0px 1px 11px;
+	width: 500px;
+}
+.menu-horizontal .menu-mega-close:hover {
+  margin-top: -1px;
+  opacity: .9;
+  cursor: pointer;
+}
+
+.menu-horizontal .menu-mega-contents             { color: #fff; border-bottom: 1px solid #111; }
+.menu-horizontal .menu-mega-contents.local-tasks { opacity: 1; display: block; }
+.menu-horizontal .menu-mega-contents a           { color: #fff; display: inline-block; padding: 0.5em .5em 0; white-space:pre-wrap; }
+
+
+.menu-horizontal .menu-mega-contents.active {
+  background : rgb(203, 37, 38);
+}
+
+.menu-mega-contents.active .menu-group-flyout {
+  padding-bottom: 2em;
+  min-height: 200px;
+  width: 500px;
+  white-space: normal;
+
+  background-color: #333;
+  background-size: cover;
+  background-position: bottom;
+  background-position: 82% 41%;
+  padding-bottom: 8em;
+  padding: 10px 0 4em 0;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  background: rgba(50, 50, 50, .95);
+}
+
+
+.menu-horizontal .menu-mega-contents a:hover {
+  background: none;
+  text-decoration: underline;
+  border: none;
+  margin-top: 0; 
+}
+.menu-horizontal .menu-mega-contents h3 { margin: 0px; font-size: 15px; display: inline-block; }
+.menu-horizontal .menu-mega-contents h3 a { padding: .9em 0 0.5em 10px; font-weight: bold; }
+.menu-horizontal .menu-mega-contents h3 a:hover { text-decoration: none; }
+.menu-horizontal .menu-mega-contents hr { border-top: 1px solid #FFF; border-bottom: none; margin: .75em -2.5em .75em -.5em; }
+
+.menu-group {
+  display: block;
+  font-size: .85em;
+  line-height: 1.7em;
+  border-bottom: 1px solid #009900;
+  position:relative;
+  background: green; /* ie require a background overlay ontop of the iframe */
+}
+
+.menu-group a {
+  width: 195px;
+}
+.menu-horizontal .menu-mega-contents .menu-item-sub    { margin: 0 0 0 1em; white-space: nowrap; font-size: .85em; }
+.menu-horizontal.menu-mega-contents .menu-item-sub a  { margin: 0; padding: 0; }
+/* since we do'n have real links, we make fake "visited" locations */
+.menu-horizontal .menu-group a:visited::after   { content: " \2713"; }
+
+
+.menu-horizontal .menu-group a.visited::after   { content: " \2713"; }
+
+
+/* Menu layering */
+.menu-mega-contents { z-index: 1100; /*position: fixed;*/ }
+.menu-mega-tabs     { z-index: 7; position: relative; }
+.menu-mega-contents .inner { z-index: 1200; position: relative;}
+
+
+/* extra space for the excerises flyout */
+#menu-group-header_4-9.menu-group .menu-group-flyout-wrapper {
+	 margin-top: -200px;
+}
+
+
+a.more:after{
+	display:block;
+	content: " ";
+	float:right;
+	width: 0;
+	height: 0;
+	border-color:transparent;
+	border-style:solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color:#ffffff;
+	margin-top:5px;
+	margin-right:8px;
+}
+
+/*
+SP2013-specific
+*/
+.ms-breadcrumb-top{
+	height: 31.25px;
+}
+#DeltaTopNavigation{
+	display:none;
+}
+
+#soceur-menu, .menu-mega-tabs{
+	background:rgb(0, 114, 198);
+}
