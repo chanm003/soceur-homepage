@@ -5,16 +5,22 @@ Deploys a webpage on SP2013 which
 * displays static content about the command
 * utilizes a SharePoint list-driven mega-menu
 
-## Upload folders and webpage to root web for site collection
-Folders `airborne` and `nav` and the `Home.aspx` page. The second folder is actually a Wiki Page Library.
-
+## Upload files and folders to SP2013
+| Asset        | Copy to the location           |
+| ------------- |:-------------:| 
+| `airborne` folder      | / |
+| `nav` folder      | /      |
+| `Home.aspx` | /      |
+| `seattle_airborne.master` | /_catalogs/masterpage      |
+ 
 ## Seed the data that drives the custom navigation
 Navigate to `Home.aspx`, then hit F12, then click the Console tab.  Run the command as shown below:
 ![alt text](https://raw.githubusercontent.com/chanm003/soceur-homepage/master/cli-navigation.PNG)
 
-## Upload .master to the gallery and push the .master down to all subsites
+## Push the .master down to all subsites
 
-.Master file is `seattle_airborne.master`
+1. Navigate to `/_layouts/15/ChangeSiteMasterPage.aspx` (may require Publishing feature to be turned on)
+2. Push this down `seattle_airborne.master`
 
 ## Configure the custom navigation (optional)
 
