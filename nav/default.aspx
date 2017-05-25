@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" masterpagefile="~masterurl/default.master"  inherits="Microsoft.SharePoint.WebPartPages.WebPartPage, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" %>
-<%@ Register tagprefix="WebPartPages" namespace="Microsoft.SharePoint.WebPartPages" assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+﻿<%@ Page Language="C#" masterpagefile="~masterurl/default.master"  inherits="Microsoft.SharePoint.WebPartPages.WebPartPage, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" %>
+<%@ Register tagprefix="WebPartPages" namespace="Microsoft.SharePoint.WebPartPages" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageTitleInTitleArea" runat="server">
 	Page to Edit the Items in Custom Navigation Menu (temporarily using old 
 	.Master page due to errors with new .Master Page, potential cause: 
@@ -8,7 +8,7 @@
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
 	<asp:ScriptManagerProxy runat="server" id="ScriptManagerProxy">
 	</asp:ScriptManagerProxy>
-	<link href="/Shared%20Documents/nav/js/lib/jstree/themes/default/style.css" rel="stylesheet" type="text/css" />
+	<link href="/nav/js/lib/jstree/themes/default/style.css" rel="stylesheet" type="text/css" />
 	<table width="100%">
 		<tr>
 			<td style="width:50%; vertical-align:top;padding-left:15px;">
@@ -58,13 +58,13 @@
 </asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderUtilityContent" runat="server">
 
-<script type="text/javascript" src="/Shared%20Documents/nav/js/lib/underscore.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/lib/jquery.min.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/lib/moment.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/lib/jstree/jstree.min.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/lib/jquery.SPServices-2014.01.min.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/app/editGlobalNav.js"></script>
-<script type="text/javascript" src="/Shared%20Documents/nav/js/app/datacontext.js"></script>
+<script type="text/javascript" src="/nav/js/lib/underscore.js"></script>
+<script type="text/javascript" src="/nav/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/nav/js/lib/moment.js"></script>
+<script type="text/javascript" src="/nav/js/lib/jstree/jstree.min.js"></script>
+<script type="text/javascript" src="/nav/js/lib/jquery.SPServices-2014.01.min.js"></script>
+<script type="text/javascript" src="/nav/js/app/editGlobalNav.js"></script>
+<script type="text/javascript" src="/nav/js/app/datacontext.js"></script>
 
 <script type="text/javascript">
     
