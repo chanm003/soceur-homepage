@@ -17,6 +17,11 @@ Deploys a webpage on SP2013 which
 Navigate to `Home.aspx`, then hit F12, then click the Console tab.  Run the command as shown below:
 ![alt text](https://raw.githubusercontent.com/chanm003/soceur-homepage/master/cli-navigation.PNG)
 
+## Publish the .master
+
+1. Navigate to `/_catalogs/masterpage` library
+2. Find `seattle_airborne.master`, then right-click --> Publish a Major Version
+
 ## Push the .master down to all subsites
 
 1. Navigate to `/_layouts/15/ChangeSiteMasterPage.aspx` (may require Publishing feature to be turned on)
